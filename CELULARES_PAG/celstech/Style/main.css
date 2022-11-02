@@ -1,0 +1,39 @@
+/* "INDICE" COMPUTADORA */
+.indice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.botones {
+    padding: 15px;
+    border-radius: 40px;
+    background-color: rgb(202, 199, 199);
+    border: 4px solid black;
+    box-shadow: none;
+}
+.botones:hover {
+    background-color: rgb(163, 159, 159);
+    transition: .3s;
+    box-shadow: 6px 3px black;
+}
+
+
+
+
+.inicio {
+    margin-bottom: 15px;
+}
+
+/* "INDICE CELULARES */
+@media (max-width: 768px) {
+    .botones img {
+        width: 150px;
+        height: auto;
+    }
+    .botones {
+        padding: 5px;
+        border: 3px solid black;
+        box-shadow: 6px 3px black;
+    }
+}

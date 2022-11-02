@@ -1,0 +1,62 @@
+.contacto {
+    align-items: center;
+}
+.text_contactanos {
+    margin-left: 20px;
+}
+.horarios p {
+    max-width: 500px;
+    font-size: 20px;
+    text-align: justify;
+    background-color: #cac7c7;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+
+/* ESTRUCTURA GENERAL */
+.contactanos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .contactanos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.contacto {
+    margin-bottom: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    align-items: center;
+}
+
+
+/* ESTILO CONTACTANOS */
+form {
+    text-align: center;
+}
+input {
+    background-color: #cac7c7;
+    width: 300px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    height: 30px;
+}
+textarea {
+    background-color: #cac7c7;
+    width: 300px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.enviar {
+    width: 100px;
+}

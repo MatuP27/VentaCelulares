@@ -1,0 +1,131 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cac7c7;
+    border-radius: 20px;
+    margin-right: 10px;
+    align-content: center;
+}
+
+/* NAVBAR MENU COMPU */
+.menu {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+        /* CAMBIO DE HAMBURGUESA */
+    left: 100%;
+    transition: left .3s;
+}
+.menu li {
+    padding: 0 15px;
+}
+
+
+/* NAVBAR LEFT */
+.logo {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(214, 12, 187);
+}
+.nav_nombre {
+    margin-left: 5px;
+}
+
+/* NAVBAR RIGHT */
+.nav_link {
+    padding: 5px;
+    border-radius: 10px;
+}
+.nav_link:hover {
+    transition: .5s;
+    box-shadow: 3px 2px black;
+}
+/* "YO", FUERA DEL HEATER */
+.programador {
+	display: flex;
+	align-items: center;
+    color: rgb(214, 12, 187);
+    background-color: #cac7c7;
+    border-radius: 20px;
+}
+.programador img {
+    border-radius: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+/* NAVBAR MENU COMPU */
+.menu {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+        /* CAMBIO DE HAMBURGUESA */
+    left: 100%;
+    transition: left .3s;
+}
+.menu li {
+    padding: 0 10px;
+}
+
+
+/* NAVBAR CELULARES */
+.hamburguesa {
+    color: rgb(163, 159, 159);
+    background-color: #cac7c7;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+
+        background-color: rgb(163, 159, 159);
+        min-width: calc(100% - 65px);
+        margin-top: 55px;
+        padding: 20px 0;
+        border-radius: 20px;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .nav_link:hover {
+        background: none;
+        color: rgb(202, 199, 199);
+        border: 2px black;
+        box-shadow: none;
+        transition: .5s;
+    }
+
+    .hamburguesa {  
+        display: block;
+        border-radius: 20px;
+    }
+    .menu_visible {
+        left: 0;
+    }
+    .navbar {
+        max-height: 55px;
+    }
+}

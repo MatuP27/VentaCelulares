@@ -1,0 +1,59 @@
+html {
+    min-height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-style: italic;
+}
+
+p {
+    color: black;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+	background-image: url(../Imágenes/fondo2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* ESTRUCTURA */
+.header { grid-area: header; }
+.programador { grid-area: programador; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 
+    "header programador" 
+    "main   main" 
+    "footer footer" /
+    auto    60px;
+}
+
+.main {
+    margin-top: 10px;
+    background-color: rgba(202, 199, 199, 0.5);
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    p { font-size: 12px; }
+    h1 { font-size: 18px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 15px; }
+    small { font-size: 10px; }
+}

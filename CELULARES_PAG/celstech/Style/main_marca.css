@@ -1,0 +1,78 @@
+.marca {
+    margin-left: 25px;
+}
+.articulo {
+    background-color: #cac7c7;
+    border-radius: 20px;
+    height: 200px;
+    max-width: 400px;
+}
+.img_modelo  {
+    width: auto;
+    height: 200px;
+    border-radius: 20px;
+}
+.descripcion {
+    margin: 25px;
+}
+h4.descripcion { margin-left: 45px;}
+.modelo {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .img_modelo {
+        height: 150px;
+    }
+    .articulo {
+        height: 150px;
+    }
+}
+
+
+.articulos {
+    margin: 0; 
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-wrap: wrap; /* SI NO ENTRAN LOS MUEVE */
+    justify-content: space-between;
+}
+
+.articulo {
+    margin: 10px;
+    flex-grow: 1;
+}
+
+/* ESTRUCTURA INTERNA ARTICULO */
+.img_modelo { grid-area: img_modelo; }
+.modelo { grid-area: modelo;}
+
+.informacion {
+    display: grid;
+    grid-template: 
+    "img_modelo modelo";
+}
+
+
+/* IFRAME MERCADO LIBRE */
+.iframe {
+    width: 100%;
+    height: 900px;
+}
+
+.iframe iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .iframe {
+       height: 400px; 
+    }
+}
